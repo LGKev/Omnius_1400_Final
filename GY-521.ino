@@ -6,6 +6,8 @@ Base code from
 // August 17, 2014
 // Public Domain
 
+
+
 ****
 Changes made by Kevin Kuwata 3/27/17
 made trigger conditions based on data collected by JohnChi's code.
@@ -25,6 +27,17 @@ Better triggering system
   this way the sensitivity is not as crucial, but more based on any changes that happen
   more than once. we can even reduce the threshold because then a vibration won't set it off
   but multiple vibrations consecutively wil. 
+
+
+WIRING SETUP:
+-----Arduino -----
+Led is digital pin 12
+----- GY-521 ----- > Arduino
+SDA - Analog 4
+SCL- Analog 5
+5V to VCC
+gnd to Gnd
+INT > Gnd
 
 
 */
