@@ -16,6 +16,7 @@ pin(3) VCC -> 5v
 /* ===== constants ===== */
 int led =12; //inidcator led for trigger of PIR
 int pirPin = A1;
+int pirPinD = 8; /// lets see if we can do a digitalRead to save analog pins we totally can with the panosonic. want to know if it will work with 4v pp. maybe an op amp?
 int pirVal = 0;
 unsigned long timeThreshold = 500; //milliseconds we want it to be triggered for more than 2 seconds
 unsigned long lastTriggered = 0; //start with 0.
@@ -30,6 +31,7 @@ void setup(){
   Serial.begin(115200);
   Serial.println("Begin.");
   digitalWrite(led, HIGH);
+  pinMode(pirPinD, INPUT);
   delay(500);
   digitalWrite(led, LOW);
   delay(500);
@@ -50,20 +52,40 @@ int triggerTime()
 //   if(triggerCount())
 // }
 
+void printCount(int number){
+  Serial.println("the number of triggers is");
+  Serial.println(number);
+  Serial.println();
+}
 
+void analogPir(){
+  if(pirVal > pirThreshold)
+    {
+    digitalWrite(led, HIGH);
+    delay(500);
+    digitalWrite(led, LOW);
+    delay(500);
+    trigCount ++;
+    printCount(trigCount);
+    }
+}
+
+void digitalPIR(){
+  if(digitalRead(pirPinD) == HIGH){
+    digitalWrite(led, HIGH);
+    delay(500);
+    digitalWrite(led, LOW);
+    delay(500);
+    trigCount ++;
+    printCount(trigCount);
+  }
+}
 
 void loop(){
 
 pirVal = analogRead(pirPin);
 
-if(pirVal > pirThreshold)
-  {
-  digitalWrite(led, HIGH);
-  delay(500);
-  digitalWrite(led, LOW);
-  delay(500);
-  trigCount ++;
-  }
+digitalPIR();
 
 
 
