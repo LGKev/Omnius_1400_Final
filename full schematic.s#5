@@ -2276,7 +2276,7 @@ Manufacturer: Hirose&lt;br&gt;
 <instance part="GND11" gate="G$1" x="-60.96" y="-26.67"/>
 <instance part="GND12" gate="G$1" x="-73.66" y="-26.67"/>
 <instance part="R21" gate="G$1" x="59.69" y="-60.96"/>
-<instance part="R22" gate="G$1" x="55.88" y="7.62" rot="R90"/>
+<instance part="R22" gate="G$1" x="46.99" y="6.35" rot="R90"/>
 <instance part="R23" gate="G$1" x="46.99" y="-45.72"/>
 <instance part="R24" gate="G$1" x="57.15" y="-45.72"/>
 <instance part="R25" gate="G$1" x="67.31" y="-45.72"/>
@@ -2313,9 +2313,9 @@ Manufacturer: Hirose&lt;br&gt;
 <instance part="SUPPLY30" gate="G$1" x="-101.6" y="22.86"/>
 <instance part="SUPPLY31" gate="G$1" x="-93.98" y="22.86"/>
 <instance part="GND13" gate="G$1" x="-25.4" y="-26.67"/>
-<instance part="GND14" gate="G$1" x="-12.7" y="-26.67"/>
-<instance part="R32" gate="G$1" x="34.29" y="15.24"/>
-<instance part="R33" gate="G$1" x="25.4" y="12.7"/>
+<instance part="GND14" gate="G$1" x="-15.24" y="-26.67"/>
+<instance part="R32" gate="G$1" x="27.94" y="15.24"/>
+<instance part="R33" gate="G$1" x="19.05" y="12.7"/>
 <instance part="GND15" gate="G$1" x="-80.01" y="-19.05"/>
 <instance part="C30" gate="G$1" x="-35.56" y="-13.97"/>
 </instances>
@@ -2401,7 +2401,8 @@ Manufacturer: Hirose&lt;br&gt;
 <pinref part="U2" gate="U$1" pin="GND@16"/>
 <wire x1="-12.7" y1="-12.7" x2="-12.7" y2="-15.24" width="0.1524" layer="91"/>
 <pinref part="GND14" gate="G$1" pin="3.3V"/>
-<wire x1="-12.7" y1="-15.24" x2="-12.7" y2="-24.13" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="-15.24" x2="-12.7" y2="-21.59" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="-21.59" x2="-15.24" y2="-24.13" width="0.1524" layer="91"/>
 <junction x="-12.7" y="-15.24"/>
 </segment>
 <segment>
@@ -2437,44 +2438,6 @@ Manufacturer: Hirose&lt;br&gt;
 <wire x1="-12.7" y1="-2.54" x2="-25.4" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="C22" gate="G$1" pin="1"/>
 <wire x1="-25.4" y1="-2.54" x2="-25.4" y2="-11.43" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="RX" class="0">
-<segment>
-<pinref part="U2" gate="U$1" pin="RXD"/>
-<pinref part="R33" gate="G$1" pin="1"/>
-<wire x1="12.7" y1="12.7" x2="20.32" y2="12.7" width="0.1524" layer="91"/>
-<label x="12.7" y="12.7" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="TX" class="0">
-<segment>
-<pinref part="U2" gate="U$1" pin="TXD"/>
-<pinref part="R32" gate="G$1" pin="1"/>
-<wire x1="12.7" y1="15.24" x2="29.21" y2="15.24" width="0.1524" layer="91"/>
-<label x="13.97" y="15.24" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="RX-I" class="0">
-<segment>
-<pinref part="R32" gate="G$1" pin="2"/>
-<wire x1="39.37" y1="15.24" x2="41.91" y2="15.24" width="0.1524" layer="91"/>
-<label x="41.91" y="15.24" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="TX-O" class="0">
-<segment>
-<pinref part="R33" gate="G$1" pin="2"/>
-<wire x1="30.48" y1="12.7" x2="36.83" y2="12.7" width="0.1524" layer="91"/>
-<label x="36.83" y="12.7" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="DTR_FTDI" class="0">
-<segment>
-<pinref part="U2" gate="U$1" pin="!DTR"/>
-<label x="13.97" y="2.54" size="1.778" layer="95"/>
-<pinref part="R22" gate="G$1" pin="1"/>
-<wire x1="12.7" y1="2.54" x2="55.88" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
