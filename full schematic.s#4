@@ -5603,7 +5603,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R9" library="SparkFun-Resistors" deviceset="0.05OHM" device="-0603-1/5W-1%" value="1k"/>
 <part name="GND23" library="SparkFun-PowerSymbols" deviceset="GND2" device=""/>
 <part name="C11" library="SparkFun-Retired" deviceset="10UF-TANT" device="" value="10uF"/>
-<part name="LS1" library="SparkFun-Electromechanical" deviceset="BUZZER" device="-PTH"/>
+<part name="BUZZER" library="SparkFun-Electromechanical" deviceset="BUZZER" device="-PTH"/>
 <part name="SUPPLY8" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
 <part name="GND24" library="SparkFun-PowerSymbols" deviceset="GND2" device=""/>
 <part name="R10" library="SparkFun-Resistors" deviceset="0.05OHM" device="-0603-1/5W-1%" value="1k"/>
@@ -5711,7 +5711,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="R9" gate="G$1" x="-137.16" y="50.8"/>
 <instance part="GND23" gate="G$1" x="-242.57" y="19.05"/>
 <instance part="C11" gate="G$1" x="-198.12" y="24.13"/>
-<instance part="LS1" gate="G$1" x="-190.5" y="180.34" smashed="yes" rot="R270">
+<instance part="BUZZER" gate="G$1" x="-190.5" y="180.34" smashed="yes" rot="R270">
 <attribute name="NAME" x="-185.674" y="182.88" size="1.778" layer="95" font="vector" rot="R270"/>
 </instance>
 <instance part="SUPPLY8" gate="G$1" x="-228.6" y="186.69"/>
@@ -6598,7 +6598,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <net name="BUZ+" class="0">
 <segment>
 <pinref part="J7_TMP2" gate="G$1" pin="1"/>
-<pinref part="LS1" gate="G$1" pin="1"/>
+<pinref part="BUZZER" gate="G$1" pin="1"/>
 <wire x1="-194.31" y1="180.34" x2="-193.04" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -6615,7 +6615,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <net name="BUZ-" class="0">
 <segment>
 <pinref part="J7_TMP2" gate="G$1" pin="2"/>
-<pinref part="LS1" gate="G$1" pin="2"/>
+<pinref part="BUZZER" gate="G$1" pin="2"/>
 <wire x1="-194.31" y1="177.8" x2="-193.04" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 <segment>

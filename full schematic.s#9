@@ -5654,6 +5654,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C13" library="SparkFun-Retired" deviceset="10UF-TANT" device="" value="10uF"/>
 <part name="IC2" library="linear-technology" deviceset="LT1129CST5" device=""/>
 <part name="SUPPLY16" library="SparkFun-PowerSymbols" deviceset="VCC" device="" value="3.3V"/>
+<part name="J8_TMP1" library="SparkFun-Connectors" deviceset="CONN_02" device="LOCK"/>
+<part name="J7_TMP2" library="SparkFun-Connectors" deviceset="CONN_02" device="LOCK"/>
 </parts>
 <sheets>
 <sheet>
@@ -5709,7 +5711,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="R9" gate="G$1" x="-137.16" y="50.8"/>
 <instance part="GND23" gate="G$1" x="-242.57" y="19.05"/>
 <instance part="C11" gate="G$1" x="-198.12" y="24.13"/>
-<instance part="LS1" gate="G$1" x="-208.28" y="181.61" rot="R270"/>
+<instance part="LS1" gate="G$1" x="-194.31" y="185.42" smashed="yes" rot="R270">
+<attribute name="NAME" x="-189.484" y="187.96" size="1.778" layer="95" font="vector" rot="R270"/>
+</instance>
 <instance part="SUPPLY8" gate="G$1" x="-222.25" y="186.69"/>
 <instance part="GND24" gate="G$1" x="-222.25" y="153.67"/>
 <instance part="R10" gate="G$1" x="-222.25" y="179.07" rot="R270"/>
@@ -5773,6 +5777,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="C13" gate="G$1" x="-95.25" y="-22.86"/>
 <instance part="IC2" gate="G$1" x="-109.22" y="-20.32"/>
 <instance part="SUPPLY16" gate="G$1" x="-95.25" y="-10.16"/>
+<instance part="J8_TMP1" gate="G$1" x="-186.69" y="165.1" rot="R180"/>
+<instance part="J7_TMP2" gate="G$1" x="-177.8" y="153.67" rot="MR180"/>
 </instances>
 <busses>
 </busses>
@@ -5979,13 +5985,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 <segment>
 <pinref part="R10" gate="G$1" pin="1"/>
-<wire x1="-222.25" y1="184.15" x2="-212.09" y2="184.15" width="0.1524" layer="91"/>
-<pinref part="LS1" gate="G$1" pin="1"/>
-<wire x1="-212.09" y1="184.15" x2="-210.82" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="-210.82" y1="182.88" x2="-210.82" y2="181.61" width="0.1524" layer="91"/>
 <pinref part="SUPPLY8" gate="G$1" pin="5V"/>
 <wire x1="-222.25" y1="186.69" x2="-222.25" y2="184.15" width="0.1524" layer="91"/>
-<junction x="-222.25" y="184.15"/>
 </segment>
 <segment>
 <pinref part="SUPPLY9" gate="G$1" pin="5V"/>
@@ -6443,10 +6444,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-187.96" y1="35.56" x2="-187.96" y2="26.67" width="0.1524" layer="91"/>
 <wire x1="-177.8" y1="48.26" x2="-177.8" y2="35.56" width="0.1524" layer="91"/>
 <junction x="-177.8" y="35.56"/>
-<wire x1="-177.8" y1="48.26" x2="-177.8" y2="59.69" width="0.1524" layer="91"/>
+<wire x1="-177.8" y1="48.26" x2="-177.8" y2="64.77" width="0.1524" layer="91"/>
 <junction x="-177.8" y="48.26"/>
-<wire x1="-177.8" y1="59.69" x2="-172.72" y2="59.69" width="0.1524" layer="91"/>
-<label x="-172.72" y="59.69" size="1.778" layer="95" xref="yes"/>
+<label x="-177.8" y="64.77" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -6454,11 +6454,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="R10" gate="G$1" pin="2"/>
 <pinref part="Q2" gate="G$1" pin="C"/>
 <wire x1="-222.25" y1="173.99" x2="-222.25" y2="168.91" width="0.1524" layer="91"/>
-<pinref part="LS1" gate="G$1" pin="2"/>
-<wire x1="-210.82" y1="179.07" x2="-210.82" y2="176.53" width="0.1524" layer="91"/>
-<wire x1="-210.82" y1="176.53" x2="-213.36" y2="173.99" width="0.1524" layer="91"/>
-<wire x1="-213.36" y1="173.99" x2="-222.25" y2="173.99" width="0.1524" layer="91"/>
-<junction x="-222.25" y="173.99"/>
 </segment>
 </net>
 <net name="N$20" class="0">
