@@ -4287,14 +4287,14 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <pin name="G2" x="15.24" y="-4.318" length="middle" rot="R90"/>
 <pin name="G3" x="20.32" y="11.43" length="middle" rot="R180"/>
 <pin name="G4" x="-4.699" y="11.43" length="middle"/>
-<pin name="P8" x="3.175" y="-1.27" length="middle" rot="R90"/>
-<pin name="P7" x="4.445" y="0.762" length="middle" rot="R90"/>
-<pin name="P6" x="5.715" y="-1.143" length="middle" rot="R90"/>
-<pin name="P5" x="6.985" y="0.635" length="middle" rot="R90"/>
-<pin name="P4" x="8.128" y="-1.27" length="middle" rot="R90"/>
-<pin name="P3" x="9.398" y="0.635" length="middle" rot="R90"/>
-<pin name="P2" x="10.668" y="-1.27" length="middle" rot="R90"/>
-<pin name="P1" x="11.811" y="0.635" length="middle" rot="R90"/>
+<pin name="DAT1" x="3.175" y="-1.27" length="middle" rot="R90"/>
+<pin name="DAT0" x="4.445" y="0.762" length="middle" rot="R90"/>
+<pin name="VSS" x="5.715" y="-1.143" length="middle" rot="R90"/>
+<pin name="CLK" x="6.985" y="0.635" length="middle" rot="R90"/>
+<pin name="VDD" x="8.128" y="-1.27" length="middle" rot="R90"/>
+<pin name="CMD" x="9.398" y="0.635" length="middle" rot="R90"/>
+<pin name="CD/DAT3" x="10.668" y="-1.27" length="middle" rot="R90"/>
+<pin name="DAT2" x="11.811" y="0.635" length="middle" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -4349,18 +4349,18 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <devices>
 <device name="" package="MICROSD_DIGIKEY">
 <connects>
+<connect gate="G1" pin="CD/DAT3" pad="2"/>
+<connect gate="G1" pin="CLK" pad="5"/>
+<connect gate="G1" pin="CMD" pad="3"/>
+<connect gate="G1" pin="DAT0" pad="7"/>
+<connect gate="G1" pin="DAT1" pad="8"/>
+<connect gate="G1" pin="DAT2" pad="1"/>
 <connect gate="G1" pin="G1" pad="G1"/>
 <connect gate="G1" pin="G2" pad="G2"/>
 <connect gate="G1" pin="G3" pad="G3"/>
 <connect gate="G1" pin="G4" pad="G4"/>
-<connect gate="G1" pin="P1" pad="1"/>
-<connect gate="G1" pin="P2" pad="2"/>
-<connect gate="G1" pin="P3" pad="3"/>
-<connect gate="G1" pin="P4" pad="4"/>
-<connect gate="G1" pin="P5" pad="5"/>
-<connect gate="G1" pin="P6" pad="6"/>
-<connect gate="G1" pin="P7" pad="7"/>
-<connect gate="G1" pin="P8" pad="8"/>
+<connect gate="G1" pin="VDD" pad="4"/>
+<connect gate="G1" pin="VSS" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -5899,6 +5899,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="J7_TMP2" library="SparkFun-Connectors" deviceset="CONN_02" device="LOCK"/>
 <part name="U$1" library="KevinKuwata1" deviceset="1N7002PW" device=""/>
 <part name="U$2" library="KevinKuwata1" deviceset="WM6698TR-ND_MICROSD" device=""/>
+<part name="SUPPLY17" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
+<part name="GND9" library="SparkFun-PowerSymbols" deviceset="GND2" device=""/>
+<part name="GND10" library="SparkFun-PowerSymbols" deviceset="GND2" device=""/>
+<part name="C14" library="SparkFun-Retired" deviceset="10UF-TANT" device="" value="10uF"/>
+<part name="IC3" library="linear-technology" deviceset="LT1129CST5" device=""/>
+<part name="SUPPLY18" library="SparkFun-PowerSymbols" deviceset="VCC" device="" value="3.3V"/>
 </parts>
 <sheets>
 <sheet>
@@ -6023,7 +6029,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="J8_TMP1" gate="G$1" x="-213.36" y="180.34" rot="R180"/>
 <instance part="J7_TMP2" gate="G$1" x="-201.93" y="180.34" rot="MR180"/>
 <instance part="U$1" gate="G$1" x="-91.44" y="53.34" rot="R270"/>
-<instance part="U$2" gate="G1" x="168.91" y="153.67"/>
+<instance part="U$2" gate="G1" x="151.13" y="153.67"/>
+<instance part="SUPPLY17" gate="G$1" x="129.54" y="210.82"/>
+<instance part="GND9" gate="G$1" x="129.54" y="186.69"/>
+<instance part="GND10" gate="G$1" x="161.29" y="185.42"/>
+<instance part="C14" gate="G$1" x="161.29" y="195.58"/>
+<instance part="IC3" gate="G$1" x="147.32" y="198.12"/>
+<instance part="SUPPLY18" gate="G$1" x="161.29" y="208.28"/>
 </instances>
 <busses>
 </busses>
@@ -6169,6 +6181,17 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="GND34" gate="G$1" pin="3.3V"/>
 <wire x1="-95.25" y1="-27.94" x2="-95.25" y2="-30.48" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND9" gate="G$1" pin="3.3V"/>
+<wire x1="129.54" y1="189.23" x2="147.32" y2="189.23" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="G$1" pin="GND"/>
+<wire x1="147.32" y1="189.23" x2="147.32" y2="193.04" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C14" gate="G$1" pin="-"/>
+<pinref part="GND10" gate="G$1" pin="3.3V"/>
+<wire x1="161.29" y1="190.5" x2="161.29" y2="187.96" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$6" class="0">
 <segment>
@@ -6274,6 +6297,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-127" y1="-7.62" x2="-127" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="IN"/>
 <wire x1="-119.38" y1="-17.78" x2="-127" y2="-17.78" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY17" gate="G$1" pin="5V"/>
+<wire x1="129.54" y1="210.82" x2="129.54" y2="200.66" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="G$1" pin="IN"/>
+<wire x1="137.16" y1="200.66" x2="129.54" y2="200.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -6854,6 +6883,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="SUPPLY16" gate="G$1" pin="VCC"/>
 <wire x1="-95.25" y1="-10.16" x2="-95.25" y2="-17.78" width="0.1524" layer="91"/>
 <junction x="-95.25" y="-17.78"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="OUT"/>
+<wire x1="157.48" y1="200.66" x2="161.29" y2="200.66" width="0.1524" layer="91"/>
+<pinref part="C14" gate="G$1" pin="+"/>
+<wire x1="161.29" y1="200.66" x2="161.29" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="SUPPLY18" gate="G$1" pin="VCC"/>
+<wire x1="161.29" y1="208.28" x2="161.29" y2="200.66" width="0.1524" layer="91"/>
+<junction x="161.29" y="200.66"/>
 </segment>
 </net>
 <net name="BUZ+" class="0">
