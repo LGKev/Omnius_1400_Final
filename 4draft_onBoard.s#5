@@ -7143,7 +7143,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="-287.02" y="16.51"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="SCK_BUFF" class="0">
 <segment>
 <pinref part="IC3" gate="A" pin="O"/>
 <wire x1="-415.29" y1="222.25" x2="-369.57" y2="222.25" width="0.1524" layer="91"/>
@@ -7162,7 +7162,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-344.424" y1="228.219" x2="-344.17" y2="227.965" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="SS_BUFF" class="0">
 <segment>
 <pinref part="IC3" gate="C" pin="O"/>
 <pinref part="U$2" gate="G1" pin="CMD"/>

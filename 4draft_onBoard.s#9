@@ -6639,7 +6639,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="-175.26" y="99.06" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="2.2NF" class="0">
 <segment>
 <pinref part="C4" gate="G$1" pin="1"/>
 <wire x1="-474.98" y1="204.47" x2="-474.98" y2="205.74" width="0.1524" layer="91"/>
@@ -6654,7 +6654,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="-556.26" y="220.98" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name=".UF" class="0">
 <segment>
 <pinref part="C8" gate="G$1" pin="1"/>
 <pinref part="MPU6050" gate="G$1" pin="REGOUT"/>
@@ -6668,7 +6668,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="-542.29" y="205.74" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="10NF" class="0">
 <segment>
 <pinref part="MPU6050" gate="G$1" pin="VLOG"/>
 <wire x1="-535.94" y1="203.2" x2="-541.02" y2="203.2" width="0.1524" layer="91"/>
@@ -6710,18 +6710,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-570.23" y1="133.35" x2="-554.99" y2="133.35" width="0.1524" layer="91"/>
 <pinref part="FTDI231XS1" gate="U$1" pin="USBDM"/>
 <wire x1="-554.99" y1="133.35" x2="-544.83" y2="137.16" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$16" class="0">
-<segment>
-<wire x1="-567.69" y1="120.65" x2="-567.69" y2="140.97" width="0.1524" layer="91"/>
-<pinref part="FTDI231XS1" gate="U$1" pin="VCC"/>
-<wire x1="-567.69" y1="140.97" x2="-567.69" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="-544.83" y1="147.32" x2="-567.69" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="C11" gate="G$1" pin="+"/>
-<pinref part="FB3" gate="G$1" pin="2"/>
-<wire x1="-586.74" y1="140.97" x2="-567.69" y2="140.97" width="0.1524" layer="91"/>
-<junction x="-567.69" y="140.97"/>
 </segment>
 </net>
 <net name="RX" class="0">
@@ -7112,6 +7100,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="R20" gate="G$1" pin="1"/>
 <wire x1="-185.42" y1="49.53" x2="-185.42" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="P+3" gate="VCC" pin="VCC"/>
+</segment>
+<segment>
+<wire x1="-567.69" y1="120.65" x2="-567.69" y2="140.97" width="0.1524" layer="91"/>
+<pinref part="FTDI231XS1" gate="U$1" pin="VCC"/>
+<wire x1="-567.69" y1="140.97" x2="-567.69" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="-544.83" y1="147.32" x2="-567.69" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="C11" gate="G$1" pin="+"/>
+<pinref part="FB3" gate="G$1" pin="2"/>
+<wire x1="-586.74" y1="140.97" x2="-567.69" y2="140.97" width="0.1524" layer="91"/>
+<junction x="-567.69" y="140.97"/>
 </segment>
 </net>
 <net name="BUZ+" class="0">

@@ -6781,11 +6781,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="-196.85" y="109.22" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J8" gate="G$1" pin="14"/>
-<wire x1="-170.18" y1="114.3" x2="-175.26" y2="114.3" width="0.1524" layer="91"/>
-<label x="-175.26" y="114.3" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
 <pinref part="GND39" gate="1" pin="GND"/>
 <pinref part="FB2" gate="G$1" pin="1"/>
 <wire x1="-101.6" y1="41.91" x2="-101.6" y2="49.53" width="0.1524" layer="91"/>
@@ -6989,11 +6984,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U$2" gate="G1" pin="VSS"/>
 <wire x1="-346.71" y1="221.869" x2="-343.916" y2="221.869" width="0.1524" layer="91"/>
 <wire x1="-343.916" y1="221.869" x2="-343.916" y2="221.615" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="J8" gate="G$1" pin="2"/>
-<wire x1="-170.18" y1="83.82" x2="-175.26" y2="83.82" width="0.1524" layer="91"/>
-<label x="-175.26" y="83.82" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
 <pinref part="FB2" gate="G$1" pin="2"/>
