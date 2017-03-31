@@ -6747,9 +6747,8 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <text x="-297.18" y="-24.13" size="1.778" layer="91">buzzer</text>
 <text x="-279.4" y="-66.04" size="1.778" layer="91">photoresistor</text>
 <text x="-193.04" y="124.46" size="1.778" layer="91">Arduino Nano Pins</text>
+<text x="-187.96" y="129.54" size="1.778" layer="91">ICSP</text>
 <text x="-194.31" y="73.66" size="1.778" layer="91">USB on this end</text>
-<text x="-191.77" y="130.81" size="1.778" layer="91">ISP on this end</text>
-<text x="-200.66" y="135.89" size="1.778" layer="91">looking from top, looking down</text>
 </plain>
 <instances>
 <instance part="ATMEGA328P-AU" gate="A" x="-303.53" y="96.52"/>
