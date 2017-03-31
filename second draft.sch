@@ -7307,8 +7307,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="J1" gate="G$1" x="-210.82" y="99.06" rot="MR180"/>
 <instance part="J8" gate="G$1" x="-160.02" y="99.06" rot="MR0"/>
 <instance part="IC4" gate="G$1" x="97.79" y="36.83" rot="R270"/>
-<instance part="MK1" gate="&gt;NAME" x="-67.31" y="57.15" rot="R90"/>
-<instance part="J7_TMP3" gate="G$1" x="-58.42" y="55.88" rot="MR180"/>
+<instance part="MK1" gate="&gt;NAME" x="-43.18" y="48.26" rot="R90"/>
+<instance part="J7_TMP3" gate="G$1" x="-22.86" y="50.8" rot="R180"/>
 <instance part="J7_TMP4" gate="G$1" x="-10.16" y="50.8" rot="MR180"/>
 <instance part="SUPPLY18" gate="G$1" x="-71.12" y="25.4"/>
 <instance part="C14" gate="G$1" x="33.02" y="52.07" rot="R90"/>
@@ -8614,6 +8614,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U$3" gate="G$1" pin="1"/>
 <pinref part="R17" gate="G$1" pin="1"/>
 <wire x1="99.06" y1="-5.08" x2="92.71" y2="-5.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$26" class="0">
+<segment>
+<pinref part="MK1" gate="&gt;NAME" pin="2"/>
+<pinref part="J7_TMP3" gate="G$1" pin="1"/>
+<wire x1="-38.1" y1="50.8" x2="-30.48" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$27" class="0">
+<segment>
+<pinref part="MK1" gate="&gt;NAME" pin="1"/>
+<pinref part="J7_TMP3" gate="G$1" pin="2"/>
+<wire x1="-38.1" y1="48.26" x2="-30.48" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

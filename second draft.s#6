@@ -7083,7 +7083,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND41" library="SparkFun-PowerSymbols" deviceset="GND" device="" value="Agnd"/>
 <part name="GND42" library="SparkFun-PowerSymbols" deviceset="GND" device="" value="Agnd"/>
 <part name="GND43" library="SparkFun-PowerSymbols" deviceset="GND" device="" value="Agnd"/>
-<part name="P+1" library="supply1" deviceset="VCC" device=""/>
+<part name="P+1" library="supply1" deviceset="VCC" device="" value="AVCC"/>
+<part name="GND13" library="SparkFun-PowerSymbols" deviceset="GND" device="" value="Agnd"/>
 </parts>
 <sheets>
 <sheet>
@@ -7261,6 +7262,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="GND42" gate="1" x="46.99" y="29.21"/>
 <instance part="GND43" gate="1" x="54.61" y="-22.86"/>
 <instance part="P+1" gate="VCC" x="-53.34" y="8.89" rot="R180"/>
+<instance part="GND13" gate="1" x="64.77" y="34.29"/>
 </instances>
 <busses>
 </busses>
@@ -8205,6 +8207,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="16.51" y1="68.58" x2="16.51" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="GND41" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="IC4" gate="G$1" pin="GND"/>
+<wire x1="76.2" y1="45.72" x2="64.77" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="64.77" y1="45.72" x2="64.77" y2="36.83" width="0.1524" layer="91"/>
+<pinref part="GND13" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="N$18" class="0">
 <segment>
@@ -8355,6 +8363,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-344.678" y1="215.9" x2="-343.916" y2="215.138" width="0.1524" layer="91"/>
 <junction x="-374.65" y="215.9"/>
 </segment>
+<segment>
+<pinref part="FB1" gate="G$1" pin="2"/>
+<wire x1="-54.61" y1="21.59" x2="-53.34" y2="21.59" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="21.59" x2="-53.34" y2="11.43" width="0.1524" layer="91"/>
+<pinref part="P+1" gate="VCC" pin="VCC"/>
+</segment>
 </net>
 <net name="BUZ+" class="0">
 <segment>
@@ -8483,13 +8497,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="46.99" y1="67.31" x2="46.99" y2="74.93" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$28" class="0">
-<segment>
-<pinref part="IC4" gate="G$1" pin="GND"/>
-<wire x1="76.2" y1="45.72" x2="64.77" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="64.77" y1="45.72" x2="64.77" y2="36.83" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$29" class="0">
 <segment>
 <pinref part="C18" gate="G$1" pin="1"/>
@@ -8524,13 +8531,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="IC4" gate="G$1" pin="VCC"/>
 <wire x1="120.65" y1="34.29" x2="138.43" y2="34.29" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$35" class="0">
-<segment>
-<pinref part="FB1" gate="G$1" pin="2"/>
-<wire x1="-54.61" y1="21.59" x2="-53.34" y2="21.59" width="0.1524" layer="91"/>
-<wire x1="-53.34" y1="21.59" x2="-53.34" y2="13.97" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
