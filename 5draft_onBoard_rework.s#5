@@ -6243,9 +6243,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="ATMEGA328P-AU" gate="A" pin="PC6"/>
 <wire x1="-271.78" y1="104.14" x2="-285.75" y2="104.14" width="0.1524" layer="91"/>
 <label x="-271.78" y="124.46" size="1.778" layer="95" rot="MR0" xref="yes"/>
-<pinref part="C7" gate="G$1" pin="2"/>
-<wire x1="-264.16" y1="124.46" x2="-271.78" y2="124.46" width="0.1524" layer="91"/>
-<junction x="-271.78" y="124.46"/>
 </segment>
 </net>
 <net name="DTR" class="0">
@@ -6638,7 +6635,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="ATMEGA328P-AU" gate="A" pin="PC5"/>
 <wire x1="-285.75" y1="106.68" x2="-264.16" y2="106.68" width="0.1524" layer="91"/>
-<label x="-264.16" y="106.68" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J8" gate="G$1" pin="8"/>
