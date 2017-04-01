@@ -7194,6 +7194,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="IC4" gate="G$1" pin="VCC"/>
 <wire x1="-255.27" y1="-21.59" x2="-223.52" y2="-21.59" width="0.1524" layer="91"/>
+<label x="-223.52" y="-21.59" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R20" gate="G$1" pin="1"/>
