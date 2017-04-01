@@ -6352,7 +6352,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R24" library="SparkFun-Retired" deviceset="2.2MOHM-1/10W-5%(0603)" device="" value="470"/>
 <part name="GND3" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="LED1" library="SparkFun-LED" deviceset="LED" device="0603"/>
-<part name="R25" library="SparkFun-Retired" deviceset="2.2MOHM-1/10W-5%(0603)" device="" value="470"/>
+<part name="R25" library="SparkFun-Retired" deviceset="2.2MOHM-1/10W-5%(0603)" device="" value="1k"/>
 </parts>
 <sheets>
 <sheet>
@@ -6857,7 +6857,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="ATMEGA328P-AU" gate="A" pin="PB1"/>
 <label x="-367.03" y="93.98" size="1.778" layer="95" rot="R180" xref="yes"/>
-<wire x1="-321.31" y1="93.98" x2="-367.03" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="-321.31" y1="93.98" x2="-364.49" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="R25" gate="G$1" pin="2"/>
+<wire x1="-364.49" y1="93.98" x2="-367.03" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="-364.49" y1="93.98" x2="-364.49" y2="91.44" width="0.1524" layer="91"/>
+<junction x="-364.49" y="93.98"/>
 </segment>
 <segment>
 <pinref part="J8_NEO_B" gate="J$1" pin="1"/>

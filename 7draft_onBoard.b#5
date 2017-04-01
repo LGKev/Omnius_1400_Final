@@ -2214,12 +2214,16 @@ design rules under a new name.</description>
 <signal name="RX-I">
 <contactref element="ATMEGA328P-AU" pad="30"/>
 <contactref element="R8" pad="2"/>
-<wire x1="18.454" y1="22.225" x2="51.304259375" y2="38.260546875" width="0" layer="19" extent="1-1"/>
+<contactref element="R27" pad="2"/>
+<wire x1="18.454" y1="22.225" x2="-85.51" y2="-44.45" width="0" layer="19" extent="1-1"/>
+<wire x1="51.304259375" y1="38.260546875" x2="18.454" y2="22.225" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TX-O">
 <contactref element="ATMEGA328P-AU" pad="31"/>
 <contactref element="R9" pad="2"/>
-<wire x1="23.28" y1="18.161" x2="50.729525" y2="38.835284375" width="0" layer="19" extent="1-1"/>
+<contactref element="R26" pad="2"/>
+<wire x1="23.28" y1="18.161" x2="-85.51" y2="-36.83" width="0" layer="19" extent="1-1"/>
+<wire x1="50.729525" y1="38.835284375" x2="23.28" y2="18.161" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D2">
 <contactref element="ATMEGA328P-AU" pad="32"/>
