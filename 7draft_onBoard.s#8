@@ -6359,6 +6359,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R27" library="SparkFun-Retired" deviceset="2.2MOHM-1/10W-5%(0603)" device="" value="1k"/>
 <part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
 <part name="SUPPLY19" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
+<part name="GND4" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="LED2" library="SparkFun-LED" deviceset="LED" device="0603"/>
+<part name="R28" library="SparkFun-Retired" deviceset="2.2MOHM-1/10W-5%(0603)" device="" value="1k"/>
+<part name="SUPPLY20" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6507,6 +6511,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="R27" gate="G$1" x="-220.98" y="71.12" rot="R90"/>
 <instance part="SUPPLY5" gate="G$1" x="-236.22" y="81.28"/>
 <instance part="SUPPLY19" gate="G$1" x="-236.22" y="76.2"/>
+<instance part="GND4" gate="1" x="-407.67" y="87.63"/>
+<instance part="LED2" gate="G$1" x="-407.67" y="99.06"/>
+<instance part="R28" gate="G$1" x="-407.67" y="107.95" rot="R90"/>
+<instance part="SUPPLY20" gate="G$1" x="-410.21" y="115.57"/>
 </instances>
 <busses>
 </busses>
@@ -6663,6 +6671,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="R26" gate="G$1" pin="2"/>
 <wire x1="-231.14" y1="76.2" x2="-236.22" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="SUPPLY19" gate="G$1" pin="5V"/>
+</segment>
+<segment>
+<pinref part="R28" gate="G$1" pin="2"/>
+<wire x1="-407.67" y1="115.57" x2="-410.21" y2="115.57" width="0.1524" layer="91"/>
+<wire x1="-407.67" y1="115.57" x2="-407.67" y2="113.03" width="0.1524" layer="91"/>
+<pinref part="SUPPLY20" gate="G$1" pin="5V"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -7336,6 +7350,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="-364.49" y1="72.39" x2="-364.49" y2="68.58" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="LED2" gate="G$1" pin="C"/>
+<pinref part="GND4" gate="1" pin="GND"/>
+<wire x1="-407.67" y1="93.98" x2="-407.67" y2="90.17" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="IR_LED" class="0">
 <segment>
@@ -7585,6 +7604,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-220.98" y1="57.15" x2="-220.98" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="-220.98" y1="45.72" x2="-237.49" y2="45.72" width="0.1524" layer="91"/>
 <label x="-237.49" y="45.72" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="LED2" gate="G$1" pin="A"/>
+<pinref part="R28" gate="G$1" pin="1"/>
+<wire x1="-407.67" y1="102.87" x2="-407.67" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

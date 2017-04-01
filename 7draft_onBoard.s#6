@@ -7576,14 +7576,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-364.49" y1="81.28" x2="-364.49" y2="80.01" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="LED4" class="0">
 <segment>
 <pinref part="R26" gate="G$1" pin="1"/>
 <pinref part="LED4" gate="G$1" pin="A"/>
 <wire x1="-231.14" y1="66.04" x2="-231.14" y2="64.77" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="LED5" class="0">
 <segment>
 <pinref part="R27" gate="G$1" pin="1"/>
 <pinref part="LED5" gate="G$1" pin="A"/>
