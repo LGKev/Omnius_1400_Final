@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -6685,20 +6685,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="-593.09" y="130.81"/>
 </segment>
 </net>
-<net name="USBDP_N" class="0">
-<segment>
-<pinref part="R7" gate="G$1" pin="2"/>
-<pinref part="FTDI231XS1" gate="U$1" pin="USBDP"/>
-<wire x1="-582.93" y1="130.81" x2="-554.99" y2="130.81" width="0.1524" layer="91"/>
-<wire x1="-554.99" y1="130.81" x2="-544.83" y2="134.62" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="USBDM_P" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="-570.23" y1="133.35" x2="-554.99" y2="133.35" width="0.1524" layer="91"/>
-<pinref part="FTDI231XS1" gate="U$1" pin="USBDM"/>
-<wire x1="-554.99" y1="133.35" x2="-544.83" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="FTDI231XS1" gate="U$1" pin="USBDP"/>
+<wire x1="-544.83" y1="134.62" x2="-554.99" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="-554.99" y1="134.62" x2="-554.99" y2="133.35" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RX" class="0">
@@ -7193,6 +7186,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-255.27" y1="-21.59" x2="-223.52" y2="-21.59" width="0.1524" layer="91"/>
 <wire x1="-223.52" y1="-21.59" x2="-223.52" y2="-15.24" width="0.1524" layer="91"/>
 <pinref part="P+4" gate="VCC" pin="VCC"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="-582.93" y1="130.81" x2="-558.8" y2="130.81" width="0.1524" layer="91"/>
+<wire x1="-558.8" y1="130.81" x2="-558.8" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="FTDI231XS1" gate="U$1" pin="USBDM"/>
+<wire x1="-558.8" y1="137.16" x2="-544.83" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

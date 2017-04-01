@@ -6582,7 +6582,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="-175.26" y="106.68" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="PB6" class="0">
+<net name="N$1" class="0">
 <segment>
 <pinref part="OSC" gate="G$1" pin="1"/>
 <pinref part="ATMEGA328P-AU" gate="A" pin="PB6"/>
@@ -6590,7 +6590,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-325.12" y1="77.47" x2="-321.31" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="PB7" class="0">
+<net name="N$2" class="0">
 <segment>
 <pinref part="ATMEGA328P-AU" gate="A" pin="PB7"/>
 <wire x1="-321.31" y1="78.74" x2="-321.31" y2="77.47" width="0.1524" layer="91"/>

@@ -6683,7 +6683,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-541.02" y1="203.2" x2="-541.02" y2="200.66" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="D+" class="0">
+<net name="D+_P" class="0">
 <segment>
 <pinref part="J2" gate="G$1" pin="D+"/>
 <wire x1="-614.68" y1="133.35" x2="-580.39" y2="133.35" width="0.1524" layer="91"/>
@@ -6693,7 +6693,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="-580.39" y="133.35"/>
 </segment>
 </net>
-<net name="D-" class="0">
+<net name="D-_N" class="0">
 <segment>
 <pinref part="J2" gate="G$1" pin="D-"/>
 <pinref part="R7" gate="G$1" pin="1"/>
@@ -6703,7 +6703,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="-593.09" y="130.81"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="USBDP_N" class="0">
 <segment>
 <pinref part="R7" gate="G$1" pin="2"/>
 <pinref part="FTDI231XS1" gate="U$1" pin="USBDP"/>
@@ -6711,7 +6711,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-554.99" y1="130.81" x2="-544.83" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="USBDM_P" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="-570.23" y1="133.35" x2="-554.99" y2="133.35" width="0.1524" layer="91"/>

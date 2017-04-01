@@ -463,13 +463,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="VIN" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 </symbol>
-<symbol name="VCC">
-<description>&lt;h3&gt;VCC Voltage Supply&lt;/h3&gt;</description>
-<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
-<pin name="VCC" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
-<text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
-</symbol>
 <symbol name="DGND">
 <description>&lt;h3&gt;Digital Ground Supply&lt;/h3&gt;</description>
 <wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
@@ -511,20 +504,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 &lt;p&gt;Generic voltage input supply symbol.&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="VIN" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="VCC" prefix="SUPPLY">
-<description>&lt;h3&gt;VCC Voltage Supply&lt;/h3&gt;
-&lt;p&gt;Positive voltage supply (traditionally for a BJT device, C=collector).&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="VCC" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -5902,12 +5881,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND32" library="SparkFun-PowerSymbols" deviceset="GND2" device=""/>
 <part name="JP1" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_NO-SILK_ROUND"/>
 <part name="J7_5V_BACKUP" library="SparkFun-Connectors" deviceset="CONN_01" device=""/>
-<part name="SUPPLY15" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
-<part name="GND33" library="SparkFun-PowerSymbols" deviceset="GND2" device=""/>
-<part name="GND34" library="SparkFun-PowerSymbols" deviceset="GND2" device=""/>
-<part name="C13" library="SparkFun-Retired" deviceset="10UF-TANT" device="" value="10uF"/>
-<part name="3.3VREG" library="linear-technology" deviceset="LT1129CST5" device=""/>
-<part name="SUPPLY16" library="SparkFun-PowerSymbols" deviceset="VCC" device="" value="3.3V"/>
 <part name="J8_BUZ_B" library="SparkFun-Connectors" deviceset="CONN_02" device="LOCK"/>
 <part name="U$1" library="KevinKuwata1" deviceset="1N7002PW" device=""/>
 <part name="U$2" library="KevinKuwata1" deviceset="WM6698TR-ND_MICROSD" device=""/>
@@ -5959,7 +5932,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-516.89" y="240.03" size="1.778" layer="91">Accelerometer</text>
 <text x="-342.9" y="241.3" size="1.778" layer="91">SD Card</text>
 <text x="-307.34" y="138.43" size="1.778" layer="91">atmega</text>
-<text x="-401.32" y="109.22" size="1.778" layer="91">3.3V</text>
 <text x="-483.87" y="100.33" size="1.778" layer="91">5v</text>
 <text x="-492.76" y="33.02" size="1.778" layer="91">neopixel</text>
 <text x="-504.19" y="-8.89" size="1.778" layer="91">TMP36</text>
@@ -6056,12 +6028,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="VALUE" x="-456.946" y="97.79" size="1.778" layer="96" font="vector" rot="R270"/>
 <attribute name="NAME" x="-455.168" y="86.36" size="1.778" layer="95" font="vector" rot="R90"/>
 </instance>
-<instance part="SUPPLY15" gate="G$1" x="-414.02" y="102.87"/>
-<instance part="GND33" gate="G$1" x="-414.02" y="78.74"/>
-<instance part="GND34" gate="G$1" x="-382.27" y="77.47"/>
-<instance part="C13" gate="G$1" x="-382.27" y="87.63"/>
-<instance part="3.3VREG" gate="G$1" x="-396.24" y="90.17"/>
-<instance part="SUPPLY16" gate="G$1" x="-382.27" y="100.33"/>
 <instance part="J8_BUZ_B" gate="G$1" x="-439.42" y="8.89" rot="R180"/>
 <instance part="U$1" gate="G$1" x="-461.01" y="147.32" rot="R270"/>
 <instance part="U$2" gate="G1" x="-339.09" y="231.14" rot="R270"/>
@@ -6200,12 +6166,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="JP1" gate="G$1" pin="1"/>
 <pinref part="SUPPLY13" gate="G$1" pin="5V"/>
 <wire x1="-436.88" y1="87.63" x2="-436.88" y2="92.71" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SUPPLY15" gate="G$1" pin="5V"/>
-<wire x1="-414.02" y1="102.87" x2="-414.02" y2="92.71" width="0.1524" layer="91"/>
-<pinref part="3.3VREG" gate="G$1" pin="IN"/>
-<wire x1="-406.4" y1="92.71" x2="-414.02" y2="92.71" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J8" gate="G$1" pin="12"/>
@@ -6873,12 +6833,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-502.92" y1="76.2" x2="-502.92" y2="69.85" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="GND33" gate="G$1" pin="3.3V"/>
-<wire x1="-414.02" y1="81.28" x2="-396.24" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="3.3VREG" gate="G$1" pin="GND"/>
-<wire x1="-396.24" y1="81.28" x2="-396.24" y2="85.09" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="FTDI231XS1" gate="U$1" pin="GND@6"/>
 <pinref part="FTDI231XS1" gate="U$1" pin="GND@16"/>
 <wire x1="-544.83" y1="119.38" x2="-544.83" y2="116.84" width="0.1524" layer="91"/>
@@ -7002,11 +6956,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="C12" gate="G$1" pin="-"/>
 <pinref part="GND32" gate="G$1" pin="3.3V"/>
 <wire x1="-448.31" y1="71.12" x2="-448.31" y2="68.58" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C13" gate="G$1" pin="-"/>
-<pinref part="GND34" gate="G$1" pin="3.3V"/>
-<wire x1="-382.27" y1="82.55" x2="-382.27" y2="80.01" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G1" pin="G3"/>
@@ -7220,17 +7169,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U$3" gate="G$1" pin="1"/>
 <pinref part="R17" gate="G$1" pin="1"/>
 <wire x1="-276.86" y1="-60.96" x2="-283.21" y2="-60.96" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="3.3V" class="0">
-<segment>
-<pinref part="3.3VREG" gate="G$1" pin="OUT"/>
-<wire x1="-386.08" y1="92.71" x2="-382.27" y2="92.71" width="0.1524" layer="91"/>
-<pinref part="C13" gate="G$1" pin="+"/>
-<wire x1="-382.27" y1="92.71" x2="-382.27" y2="90.17" width="0.1524" layer="91"/>
-<pinref part="SUPPLY16" gate="G$1" pin="VCC"/>
-<wire x1="-382.27" y1="100.33" x2="-382.27" y2="92.71" width="0.1524" layer="91"/>
-<junction x="-382.27" y="92.71"/>
 </segment>
 </net>
 <net name="AVCC" class="0">
