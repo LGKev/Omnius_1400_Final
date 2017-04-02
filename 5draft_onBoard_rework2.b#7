@@ -145,8 +145,6 @@
 <wire x1="51.994" y1="52.314" x2="0" y2="52.314" width="0" layer="20"/>
 <wire x1="0" y1="52.314" x2="0" y2="0" width="0" layer="20"/>
 <hole x="6.35" y="44.45" drill="2.6"/>
-<hole x="44.45" y="44.45" drill="2.6"/>
-<hole x="44.45" y="6.35" drill="2.6"/>
 </plain>
 <libraries>
 <library name="Atmega-328pu">

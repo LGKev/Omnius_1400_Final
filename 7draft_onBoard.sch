@@ -6422,12 +6422,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="D5" gate="G$1" x="-496.57" y="78.74"/>
 <instance part="V_IN" gate="G$1" x="-510.54" y="78.74" rot="MR180"/>
 <instance part="SUPPLY14" gate="G$1" x="-486.41" y="87.63"/>
-<instance part="JP1" gate="G$1" x="-441.96" y="87.63" smashed="yes" rot="R180">
-<attribute name="NAME" x="-439.42" y="85.09" size="1.778" layer="95" font="vector" rot="R180"/>
+<instance part="JP1" gate="G$1" x="-439.42" y="85.09" smashed="yes" rot="R180">
+<attribute name="NAME" x="-436.88" y="82.55" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
-<instance part="J7_5V_BACKUP" gate="G$1" x="-452.12" y="95.25" smashed="yes" rot="R270">
-<attribute name="VALUE" x="-456.946" y="97.79" size="1.778" layer="96" font="vector" rot="R270"/>
-<attribute name="NAME" x="-455.168" y="86.36" size="1.778" layer="95" font="vector" rot="R90"/>
+<instance part="J7_5V_BACKUP" gate="G$1" x="-441.96" y="102.87" smashed="yes" rot="R270">
+<attribute name="VALUE" x="-446.786" y="105.41" size="1.778" layer="96" font="vector" rot="R270"/>
+<attribute name="NAME" x="-445.008" y="93.98" size="1.778" layer="95" font="vector" rot="R90"/>
 </instance>
 <instance part="J8_BUZ_B" gate="G$1" x="-439.42" y="8.89" rot="R180"/>
 <instance part="U$2" gate="G1" x="-339.09" y="231.14" rot="R270"/>
@@ -6584,7 +6584,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="JP1" gate="G$1" pin="1"/>
 <pinref part="SUPPLY13" gate="G$1" pin="5V"/>
-<wire x1="-436.88" y1="87.63" x2="-436.88" y2="92.71" width="0.1524" layer="91"/>
+<pinref part="J7_5V_BACKUP" gate="G$1" pin="1"/>
+<wire x1="-434.34" y1="85.09" x2="-436.88" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="-441.96" y1="95.25" x2="-436.88" y2="95.25" width="0.1524" layer="91"/>
+<wire x1="-436.88" y1="95.25" x2="-436.88" y2="92.71" width="0.1524" layer="91"/>
+<wire x1="-436.88" y1="92.71" x2="-436.88" y2="91.44" width="0.1524" layer="91"/>
+<junction x="-436.88" y="92.71"/>
 </segment>
 <segment>
 <pinref part="J8" gate="G$1" pin="12"/>
@@ -7383,13 +7388,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="5VREG" gate="G$1" pin="OUT"/>
 <pinref part="C12" gate="G$1" pin="+"/>
 <wire x1="-458.47" y1="78.74" x2="-448.31" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="J7_5V_BACKUP" gate="G$1" pin="1"/>
-<wire x1="-452.12" y1="87.63" x2="-448.31" y2="87.63" width="0.1524" layer="91"/>
 <wire x1="-448.31" y1="87.63" x2="-448.31" y2="78.74" width="0.1524" layer="91"/>
 <junction x="-448.31" y="78.74"/>
 <pinref part="JP1" gate="G$1" pin="2"/>
-<wire x1="-447.04" y1="87.63" x2="-448.31" y2="87.63" width="0.1524" layer="91"/>
-<junction x="-448.31" y="87.63"/>
+<wire x1="-444.5" y1="85.09" x2="-448.31" y2="87.63" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R28" gate="G$1" pin="2"/>
@@ -7863,12 +7865,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <approved hash="104,1,-321.31,119.38,ATMEGA328P-AU,VCC_2,5V,,,"/>
 <approved hash="104,1,-321.31,116.84,ATMEGA328P-AU,VCC,5V,,,"/>
 <approved hash="104,1,-321.31,114.3,ATMEGA328P-AU,AVCC,5V,,,"/>
-<approved hash="104,1,-632.46,128.27,J2,VBUS,VUSB,,,"/>
 <approved hash="104,1,-441.96,200.66,IC3P,VCC,5V,,,"/>
+<approved hash="104,2,-78.74,-3.81,J2,VBUS,VUSB,,,"/>
 <approved hash="106,1,-535.94,205.74,ADO,,,,,"/>
 <approved hash="106,1,-535.94,220.98,INT,,,,,"/>
-<approved hash="106,1,-519.43,121.92,RXLED,,,,,"/>
-<approved hash="106,1,-519.43,119.38,TXLED,,,,,"/>
 <approved hash="110,1,-356.997,224.917,DAT1,MISO,,,,"/>
 <approved hash="110,1,-356.997,224.917,DAT1,MISO,,,,"/>
 <approved hash="111,1,-425.45,213.36,MOSI,,,,,"/>
@@ -7879,17 +7879,22 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <approved hash="113,1,-505.302,-52.1377,J5_IR_LED_B,,,,,"/>
 <approved hash="113,1,-503.513,11.3623,J8_NEO_B,,,,,"/>
 <approved hash="113,1,-506.137,76.1323,V_IN,,,,,"/>
-<approved hash="113,1,-453.458,94.9553,J7_5V_BACKUP,,,,,"/>
+<approved hash="113,1,-443.298,102.575,J7_5V_BACKUP,,,,,"/>
 <approved hash="113,1,-443.823,6.28227,J8_BUZ_B,,,,,"/>
 <approved hash="113,1,-203.877,97.7223,J1,,,,,"/>
 <approved hash="113,1,-166.963,100.398,J8,,,,,"/>
-<approved hash="113,1,-381.677,-7.68773,J7_MIC_B,,,,,"/>
+<approved hash="113,1,-381.677,-45.7877,J7_MIC_B,,,,,"/>
 <approved hash="113,1,-505.207,-19.1177,J7-TMP_B1,,,,,"/>
 <approved hash="113,1,-556.853,16.4423,J9_PIR1,,,,,"/>
 <approved hash="113,1,-556.853,-14.0377,J9_PIR2,,,,,"/>
 <approved hash="113,1,-559.393,46.9223,J9_PIR3,,,,,"/>
-<approved hash="115,1,-567.69,130.81,VUSB,,,,,"/>
-<approved hash="115,1,-604.52,133.985,VUSB,,,,,"/>
+<approved hash="113,1,-233.1,60.96,LED4,,,,,"/>
+<approved hash="113,1,-222.94,60.96,LED5,,,,,"/>
+<approved hash="113,1,-409.63,97.79,LED2,,,,,"/>
+<approved hash="113,1,-352.48,60.96,LED3,,,,,"/>
+<approved hash="115,2,-13.97,-1.27,VUSB,,,,,"/>
+<approved hash="115,2,-50.8,1.905,VUSB,,,,,"/>
+<approved hash="115,1,-453.39,78.74,5REGOUT,,,,,"/>
 </errors>
 </schematic>
 </drawing>

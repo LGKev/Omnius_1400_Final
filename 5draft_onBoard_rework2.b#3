@@ -32,8 +32,8 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
@@ -2088,11 +2088,6 @@ design rules under a new name.</description>
 <vertex x="51.562" y="51.816"/>
 <vertex x="0.508" y="51.816"/>
 </polygon>
-<wire x1="31.7872" y1="32.5374" x2="32.5344" y2="31.3944" width="0" layer="19" extent="1-16"/>
-<wire x1="35.179" y1="14.859" x2="35.306" y2="14.732" width="0" layer="19" extent="1-16"/>
-<wire x1="26.528" y1="9.144" x2="27.8218" y2="6.3854" width="0" layer="19" extent="1-16"/>
-<wire x1="26.812" y1="11.176" x2="26.528" y2="9.144" width="0" layer="19" extent="16-16"/>
-<wire x1="28.1813" y1="15.5575" x2="26.812" y2="11.176" width="0" layer="19" extent="16-16"/>
 <polygon width="0.2032" layer="16">
 <vertex x="1.016" y="51.308"/>
 <vertex x="50.8" y="51.308"/>
@@ -2100,6 +2095,7 @@ design rules under a new name.</description>
 <vertex x="1.016" y="1.27"/>
 <vertex x="1.016" y="1.524"/>
 </polygon>
+<wire x1="26.812" y1="11.176" x2="28.1813" y2="15.5575" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$6">
 <contactref element="C9" pad="1"/>
