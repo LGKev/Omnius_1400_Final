@@ -24,7 +24,7 @@ Better triggering system
 
   this way the sensitivity is not as crucial, but more based on any changes that happen
   more than once. we can even reduce the threshold because then a vibration won't set it off
-  but multiple vibrations consecutively wil. 
+  but multiple vibrations consecutively wil.
 
 
 */
@@ -35,7 +35,7 @@ int i_x, i_y, i_z; // these are the initial positions from accelerometer data
 int delta_X;
 int CountX; // trigger count
 
-int led = 12; // test led to note change on pin 12.
+int led = 13; // test led to note change on pin 12.
 
 void setup(){
   Wire.begin();
@@ -46,9 +46,9 @@ void setup(){
   Serial.begin(9600);
 
 pinMode(led, OUTPUT);
-digitalWrite(12, HIGH);
+digitalWrite(led, HIGH);
 delay(250);
-digitalWrite(12, LOW);
+digitalWrite(led, LOW);
 
 initializeACC();
 
@@ -72,7 +72,7 @@ int stateChange(){
 AcX=Wire.read()<<8|Wire.read();
 delta_X =abs( i_x - AcX ); //change value
 
-if(delta_X > 350 ){
+if(delta_X > 600 ){
   CountX ++;//incriment
   return 1;
 }
